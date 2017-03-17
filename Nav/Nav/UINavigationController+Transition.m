@@ -114,7 +114,7 @@
         UIView *adaptiveBackdrop = [barBackgroundView valueForKey:@"_adaptiveBackdrop"];
         adaptiveBackdrop.alpha = alpha;
         if (adaptiveBackdrop) {
-            UIView *backgroundEffectView = [adaptiveBackdrop valueForKey:@"_backgroundEffectView"];
+            UIView *backgroundEffectView = [adaptiveBackdrop valueForKey:@"_backdropEffectView"];
             backgroundEffectView.alpha = alpha;
         }
 
