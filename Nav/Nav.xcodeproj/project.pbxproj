@@ -13,8 +13,10 @@
 		4F3B0DD31E7B872300D17E59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F3B0DD21E7B872300D17E59 /* Assets.xcassets */; };
 		4F3B0DD61E7B872300D17E59 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F3B0DD41E7B872300D17E59 /* LaunchScreen.storyboard */; };
 		4F3B0DDF1E7B877C00D17E59 /* UINavigationController+Transition.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F3B0DDE1E7B877C00D17E59 /* UINavigationController+Transition.m */; };
-		4F41919F1E7BACA800C9BA21 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F41919E1E7BACA800C9BA21 /* TableViewController.m */; };
-		4F4191A31E7BB62F00C9BA21 /* NavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F4191A21E7BB62F00C9BA21 /* NavViewController.m */; };
+		4F9604991E82181D00F57693 /* CollectionViewFlowLayout_1.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F9604981E82181D00F57693 /* CollectionViewFlowLayout_1.m */; };
+		4F96049F1E82188600F57693 /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F96049E1E82188600F57693 /* CollectionViewController.m */; };
+		4F9604A51E823ACF00F57693 /* CYXWaterflowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F9604A21E823ACF00F57693 /* CYXWaterflowController.m */; };
+		4F9604A61E823ACF00F57693 /* CYXWaterFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F9604A41E823ACF00F57693 /* CYXWaterFlowLayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,10 +31,15 @@
 		4F3B0DD71E7B872300D17E59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4F3B0DDD1E7B877C00D17E59 /* UINavigationController+Transition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+Transition.h"; sourceTree = "<group>"; };
 		4F3B0DDE1E7B877C00D17E59 /* UINavigationController+Transition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+Transition.m"; sourceTree = "<group>"; };
-		4F41919D1E7BACA800C9BA21 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
-		4F41919E1E7BACA800C9BA21 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
-		4F4191A11E7BB62F00C9BA21 /* NavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavViewController.h; sourceTree = "<group>"; };
-		4F4191A21E7BB62F00C9BA21 /* NavViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavViewController.m; sourceTree = "<group>"; };
+		4F9604971E82181D00F57693 /* CollectionViewFlowLayout_1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewFlowLayout_1.h; sourceTree = "<group>"; };
+		4F9604981E82181D00F57693 /* CollectionViewFlowLayout_1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewFlowLayout_1.m; sourceTree = "<group>"; };
+		4F96049D1E82188600F57693 /* CollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewController.h; sourceTree = "<group>"; };
+		4F96049E1E82188600F57693 /* CollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewController.m; sourceTree = "<group>"; };
+		4F9604A01E821AE600F57693 /* Nav.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Nav.pch; sourceTree = "<group>"; };
+		4F9604A11E823ACF00F57693 /* CYXWaterflowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYXWaterflowController.h; sourceTree = "<group>"; };
+		4F9604A21E823ACF00F57693 /* CYXWaterflowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYXWaterflowController.m; sourceTree = "<group>"; };
+		4F9604A31E823ACF00F57693 /* CYXWaterFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYXWaterFlowLayout.h; sourceTree = "<group>"; };
+		4F9604A41E823ACF00F57693 /* CYXWaterFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYXWaterFlowLayout.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,19 +72,17 @@
 		4F3B0DC51E7B872200D17E59 /* Nav */ = {
 			isa = PBXGroup;
 			children = (
+				4F9604931E8217D800F57693 /* CollectionView */,
 				4F3B0DC91E7B872200D17E59 /* AppDelegate.h */,
 				4F3B0DCA1E7B872200D17E59 /* AppDelegate.m */,
 				4F3B0DCC1E7B872200D17E59 /* ViewController.h */,
 				4F3B0DCD1E7B872200D17E59 /* ViewController.m */,
-				4F41919D1E7BACA800C9BA21 /* TableViewController.h */,
-				4F41919E1E7BACA800C9BA21 /* TableViewController.m */,
 				4F3B0DDD1E7B877C00D17E59 /* UINavigationController+Transition.h */,
 				4F3B0DDE1E7B877C00D17E59 /* UINavigationController+Transition.m */,
-				4F4191A11E7BB62F00C9BA21 /* NavViewController.h */,
-				4F4191A21E7BB62F00C9BA21 /* NavViewController.m */,
 				4F3B0DD21E7B872300D17E59 /* Assets.xcassets */,
 				4F3B0DD41E7B872300D17E59 /* LaunchScreen.storyboard */,
 				4F3B0DD71E7B872300D17E59 /* Info.plist */,
+				4F9604A01E821AE600F57693 /* Nav.pch */,
 				4F3B0DC61E7B872200D17E59 /* Supporting Files */,
 			);
 			path = Nav;
@@ -89,6 +94,21 @@
 				4F3B0DC71E7B872200D17E59 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4F9604931E8217D800F57693 /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				4F9604971E82181D00F57693 /* CollectionViewFlowLayout_1.h */,
+				4F9604981E82181D00F57693 /* CollectionViewFlowLayout_1.m */,
+				4F96049D1E82188600F57693 /* CollectionViewController.h */,
+				4F96049E1E82188600F57693 /* CollectionViewController.m */,
+				4F9604A11E823ACF00F57693 /* CYXWaterflowController.h */,
+				4F9604A21E823ACF00F57693 /* CYXWaterflowController.m */,
+				4F9604A31E823ACF00F57693 /* CYXWaterFlowLayout.h */,
+				4F9604A41E823ACF00F57693 /* CYXWaterFlowLayout.m */,
+			);
+			path = CollectionView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,12 +182,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F9604991E82181D00F57693 /* CollectionViewFlowLayout_1.m in Sources */,
+				4F9604A51E823ACF00F57693 /* CYXWaterflowController.m in Sources */,
 				4F3B0DCE1E7B872200D17E59 /* ViewController.m in Sources */,
-				4F41919F1E7BACA800C9BA21 /* TableViewController.m in Sources */,
+				4F96049F1E82188600F57693 /* CollectionViewController.m in Sources */,
+				4F9604A61E823ACF00F57693 /* CYXWaterFlowLayout.m in Sources */,
 				4F3B0DCB1E7B872200D17E59 /* AppDelegate.m in Sources */,
 				4F3B0DDF1E7B877C00D17E59 /* UINavigationController+Transition.m in Sources */,
 				4F3B0DC81E7B872200D17E59 /* main.m in Sources */,
-				4F4191A31E7BB62F00C9BA21 /* NavViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +300,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = XYE5S97B94;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Nav/Nav.pch;
 				INFOPLIST_FILE = Nav/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -291,6 +315,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = XYE5S97B94;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Nav/Nav.pch;
 				INFOPLIST_FILE = Nav/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

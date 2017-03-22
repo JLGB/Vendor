@@ -7,7 +7,8 @@
 //
 
 #import "ViewController.h"
-#import "TableViewController.h"
+#import "UINavigationController+Transition.h"
+#import "CollectionViewController.h"
 
 @interface ViewController ()
 
@@ -20,22 +21,6 @@
     
     self.navigationBarAlpha = 1;
     self.navigationBarTintColor = [UIColor colorWithRed:0 green:0.5 blue:0.5 alpha:0];
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     
     self.title = @"first";
     self.view.backgroundColor = [UIColor whiteColor];
@@ -48,11 +33,8 @@
 }
 
 - (void)clock:(id)sender {
-    TableViewController *vc = [TableViewController new];
-    vc.navigationBarTintColor = [UIColor colorWithRed:0.2 green:0.8 blue:0.1 alpha:0.5];
-    vc.navigationBarAlpha = 0.5;
+    CollectionViewController *vc = [[CollectionViewController alloc] initWithType:1];
     [self.navigationController pushViewController:vc animated:YES];
-    
 }
 
 
