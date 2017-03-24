@@ -25,6 +25,7 @@
     self.view = view;
     
     UIButton *undoBtn = [UIButton new];
+    [undoBtn setTitle:@"撤销" forState:UIControlStateNormal];
     undoBtn.frame = CGRectMake(30, 20, 40, 40);
     undoBtn.backgroundColor = [UIColor blueColor];
     [self.view addSubview:undoBtn];
@@ -32,6 +33,7 @@
     [undoBtn addTarget:view action:@selector(undoLatestStep) forControlEvents:UIControlEventTouchUpInside];
     
     UIButton *clearBtn = [UIButton new];
+    [clearBtn setTitle:@"清空" forState:UIControlStateNormal];
     clearBtn.frame = CGRectMake(100, 20, 40, 40);
     clearBtn.backgroundColor = [UIColor blueColor];
     [self.view addSubview:clearBtn];
@@ -39,6 +41,7 @@
     [clearBtn addTarget:view action:@selector(clear) forControlEvents:UIControlEventTouchUpInside];
     
     UIButton *repalyBtn = [UIButton new];
+    [repalyBtn setTitle:@"播放" forState:UIControlStateNormal];
     repalyBtn.frame = CGRectMake(200, 20, 40, 40);
     repalyBtn.backgroundColor = [UIColor redColor];
     [self.view addSubview:repalyBtn];

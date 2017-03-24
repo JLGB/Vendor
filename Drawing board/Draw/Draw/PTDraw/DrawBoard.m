@@ -13,7 +13,6 @@
     NSTimer * _timer;
 }
 @property (nonatomic,strong) NSMutableArray *bezierPenArray;
-//@property (nonatomic,strong) NSMutableArray *bufferBezierPenArray;
 @property (nonatomic,strong) BezierPen *currenPen;
 
 @property (nonatomic,strong) UIImage *snapshot;
@@ -93,7 +92,6 @@
     self.snapshot = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     [self setNeedsDisplay];
-    
 }
 
 
