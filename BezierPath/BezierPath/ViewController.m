@@ -87,7 +87,7 @@
     anim.fromValue = @(0);
     anim.toValue = @(1);
 //    anim.autoreverses = YES;
-//    anim.fillMode = kCAFillModeForwards;
+    anim.fillMode = kCAFillModeForwards;
 //    anim.repeatCount = 1;
     [layer addAnimation:anim forKey:@"strokeEndAnim"];
 }
